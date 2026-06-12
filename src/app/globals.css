@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(174 50% 10%);
+  --primary: hsl(174 71% 40%);
+  --primary-foreground: hsl(0 0% 100%);
+  --card: hsl(174 15% 97%);
+  --card-foreground: hsl(174 50% 12%);
+  --border: hsl(174 20% 90%);
+}
+
+.dark {
+  --background: hsl(174 40% 9%);
+  --foreground: hsl(174 10% 95%);
+  --primary: hsl(174 71% 50%);
+  --primary-foreground: hsl(174 40% 9%);
+  --card: hsl(174 40% 13%);
+  --card-foreground: hsl(174 10% 95%);
+  --border: hsl(174 40% 18%);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-down: fade-down 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Clases utilitarias personalizadas para Merrash Coaching */
+.bg-service-card {
+  background: linear-gradient(to bottom right, hsl(0 0% 100%) 0%, hsl(174 15% 98%) 100%);
+  border: 1px solid hsl(174 20% 92%);
+  box-shadow: 0 4px 30px -4px rgba(29, 166, 147, 0.03);
+}
+
+.dark .bg-service-card {
+  background: linear-gradient(to bottom right, hsl(174 40% 13%) 0%, hsl(174 40% 10%) 100%);
+  border: 1px solid hsl(174 40% 18%);
+  box-shadow: 0 4px 30px -4px rgba(0, 0, 0, 0.2);
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-down {
+  animation: fade-down 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
