@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Merrash Coaching 🌿
 
-## Getting Started
+Plataforma web **premium y minimalista** para la marca personal de la **Dra. Lulú**. Diseñada para convertir visitantes en clientes de programas de coaching holístico y médico, con un enfoque en la experiencia de usuario de alto valor.
 
-First, run the development server:
+---
+
+## ✨ Tecnologías Principales
+
+| Tecnología | Rol en el proyecto |
+|---|---|
+| **Next.js 16 (App Router)** | Framework principal — SSR, routing y optimización |
+| **Tailwind CSS v4** | Sistema de estilos — tokens y utilidades |
+| **Framer Motion** | Animaciones de entrada y transiciones fluidas |
+| **Lucide React** | Librería de íconos limpios y consistentes |
+| **Plus Jakarta Sans** | Tipografía principal vía `next/font/google` |
+| **TypeScript** | Tipado estricto en todo el proyecto |
+
+---
+
+## 🚀 Configuración para Desarrollo
+
+Sigue estos pasos para levantar el proyecto localmente:
 
 ```bash
+# 1. Clonar el repositorio
+git clone https://github.com/atack49/merrash-coaching.git
+
+# 2. Entrar a la carpeta del proyecto
+cd merrash-coaching
+
+# 3. Instalar dependencias
+npm install
+
+# 4. Iniciar el servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La aplicación estará disponible en **[http://localhost:3000](http://localhost:3000)**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura del Proyecto
 
-## Learn More
+```
+merrash-coaching/
+├── src/
+│   └── app/
+│       ├── layout.tsx      # Layout raíz (fuente, metadata global)
+│       ├── page.tsx        # Landing page principal
+│       └── globals.css     # Design tokens y estilos globales
+├── public/                 # Activos estáticos
+├── .gitignore
+├── next.config.ts
+├── tailwind.config.ts
+└── package.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🗺️ Mapa de Ruta — Próximas Integraciones
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] **Pasarela de Pagos** — Integración con Stripe y/o PayPal para cobro de programas directamente desde la web.
+- [ ] **Sistema de Agendamiento** — Módulo de videollamadas y citas con Cal.com o Calendly embebido.
+- [ ] **Blog Médico** — Sistema de artículos y contenido educativo con MDX o CMS headless (Sanity/Contentful).
+- [ ] **Autenticación de Clientes** — Área privada para pacientes activos con seguimiento de su programa.
+- [ ] **Notificaciones por Email** — Confirmaciones y recordatorios automáticos de sesión vía Resend.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyecto privado. Todos los derechos reservados © Merrash Coaching.
